@@ -70,11 +70,14 @@ th {
 
 /*! Reset native browser parameters */
 
-
-
 body {
   background: #f3f3f3;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.logo__header { font-family: 'Shrikhand', serif;}
+.header__logo {
+  font-family: "Shrikhand", serif;
+  font-size: 700;
+  display: flex;
+  justify-content: center;
+}

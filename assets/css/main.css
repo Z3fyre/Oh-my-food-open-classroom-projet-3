@@ -82,8 +82,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo__header {
+.header__logo {
   font-family: "Shrikhand", serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
