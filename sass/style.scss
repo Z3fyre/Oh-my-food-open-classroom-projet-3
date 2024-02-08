@@ -1,12 +1,23 @@
-
 body {
   background: #f3f3f3;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.header__logo {
-  font-family: "Shrikhand", serif;
-  font-size: 700;
-  display: flex;
-  justify-content: center;
+header {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1rem;
+  .header__logo {
+    font-family: "Shrikhand", serif;
+    font-size: 0px;
+    & img {
+      width: 60%;
+      max-width: 250px;
+      margin-bottom: 1rem;
+    }
+  }
 }
