@@ -17,8 +17,7 @@ header .header__logo {
   font-size: 0px;
 }
 header .header__logo img {
-  width: 60%;
-  max-width: 250px;
+  max-width: 200px;
   margin-bottom: 1rem;
 }
 
