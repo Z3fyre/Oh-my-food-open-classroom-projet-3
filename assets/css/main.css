@@ -1,6 +1,7 @@
 body {
   background: #f3f3f3;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +9,6 @@ body {
 }
 
 header {
-  font-size: 16px;
   font-weight: 500;
   padding: 1rem;
 }
@@ -19,6 +19,40 @@ header .header__logo {
 header .header__logo img {
   max-width: 200px;
   margin-bottom: 1rem;
+}
+
+footer {
+  background: #353535;
+  width: 100%;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.footer {
+  color: #ffffff;
+}
+.footer__list {
+  padding-top: 1rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__liens {
+  padding-bottom: 0.3rem;
+}
+
+.footer__icon {
+  padding-right: 0.7rem;
+}
+.footer__icon__2 {
+  padding-right: 0.1rem;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */
