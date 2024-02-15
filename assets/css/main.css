@@ -1,5 +1,8 @@
+/* feuille de style commune*/
+/* Variables */
+/* Main commun */
 body {
-  background: #f3f3f3;
+  background: rgb(246, 246, 246);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   display: flex;
@@ -9,8 +12,12 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   font-weight: 500;
   padding: 1rem;
+  background-color: rgb(255, 255, 255);
 }
 header .header__logo {
   font-family: "Shrikhand", serif;
@@ -18,14 +25,33 @@ header .header__logo {
 }
 header .header__logo img {
   max-width: 200px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__btn {
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  border-radius: 100px;
+  color: #ffffff;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  cursor: pointer;
+  transition: all 300ms;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.hero__btn:hover {
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+}
+.hero__btn a {
+  text-decoration: none;
 }
 
 footer {
-  background: #353535;
+  background: rgb(53, 53, 53);
   width: 100%;
   font-weight: 500;
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 .footer {
