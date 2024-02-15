@@ -1,0 +1,74 @@
+@import "style";
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  background-color: rgba(234, 234, 234, 1);
+  font-size: 1.2rem;
+  position: relative;
+  color: rgba(53, 53, 53, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__text {
+    font-weight: 700;
+  }
+}
+
+.hero {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+  &__text {
+    padding: 0.5rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+.fonction {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary-color;
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 2rem 0rem 1rem 0rem;
+  }
+  &__etape {
+    list-style: none;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 1.2rem 3rem;
+    background-color: $main-color;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;
+  }
+}
+
+i.fonction__icon {
+  margin-right: 1rem;
+  &.fas.fa-store {
+    color: rgba(147, 86, 220, 1);
+  }
+}
