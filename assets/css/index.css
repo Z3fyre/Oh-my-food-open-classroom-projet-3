@@ -1,0 +1,155 @@
+/* feuille de style commune*/
+/* Variables */
+/* Main commun */
+body {
+  background: rgb(246, 246, 246);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+header .header__logo {
+  font-family: "Shrikhand", serif;
+  font-size: 0px;
+}
+header .header__logo img {
+  max-width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.hero__btn {
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  border-radius: 100px;
+  color: #ffffff;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  cursor: pointer;
+  transition: all 300ms;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.hero__btn:hover {
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+}
+.hero__btn a {
+  text-decoration: none;
+}
+
+footer {
+  background: rgb(53, 53, 53);
+  width: 100%;
+  font-weight: 500;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer {
+  color: #ffffff;
+}
+.footer__list {
+  padding-top: 1rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__liens {
+  padding-bottom: 0.3rem;
+}
+
+.footer__icon {
+  padding-right: 0.7rem;
+}
+.footer__icon__2 {
+  padding-right: 0.1rem;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  background-color: rgb(234, 234, 234);
+  font-size: 1.2rem;
+  position: relative;
+  color: rgb(53, 53, 53);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.localisation__icon {
+  margin-right: 1rem;
+}
+.localisation__text {
+  font-weight: 700;
+}
+
+.hero {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.hero__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.hero__text {
+  padding: 0.5rem 0rem 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.fonction {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+.fonction__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 2rem 0rem 1rem 0rem;
+}
+.fonction__etape {
+  list-style: none;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 1.2rem 3rem;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+i.fonction__icon {
+  margin-right: 1rem;
+}
+i.fonction__icon.fas.fa-store {
+  color: rgb(147, 86, 220);
+}
+
+/*# sourceMappingURL=index.css.map */

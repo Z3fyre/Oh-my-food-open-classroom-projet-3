@@ -32,6 +32,7 @@
     ></script>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
 
   <body>
@@ -43,9 +44,10 @@
     </header>
 
     <main>
-      
-      <i class="fas fa-map-marker-alt local__icon"></i>
-      <span class="localisation">Paris, Belleville</span>
+      <section class="localisation">
+        <i class="fas fa-map-marker-alt localisation__icon"></i>
+        <span class="localisation__text">Paris, Belleville</span>
+      </section>
 
       <section class="hero">
         <h2 class="hero__title">Réservez le menu qui vous convient</h2>
@@ -53,6 +55,26 @@
           Découvrez des restaurants d'exception, séléctionnés par nos soins
         </p>
         <a class="hero__btn"> Explorer nos restaurants </a>
+      </section>
+
+      <section class="fonction">
+        <div class="container">
+          <h2 class="fonction__title">Fonctionnement</h2>
+          <ol class="fonction__etapes">
+            <li class="fonction__etape">
+              <i class="fonction__icon fas fa-mobile-alt"></i>
+              <span class="text">Choisissez un restaurant</span>
+            </li>
+            <li class="fonction__etape">
+              <i class="fonction__icon fas fa-list-ul"></i>
+              <span class="text">Composez votre menu</span>
+            </li>
+            <li class="fonction__etape">
+              <i class="fonction__icon fas fa-store"></i>
+              <span class="text">Dégustez au restaurant</span>
+            </li>
+          </ol>
+        </div>
       </section>
     </main>
 
