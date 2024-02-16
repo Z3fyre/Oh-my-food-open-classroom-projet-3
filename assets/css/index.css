@@ -87,6 +87,17 @@ main {
   width: 100%;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 2rem 0rem 1rem 1rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -125,14 +136,17 @@ main {
 }
 
 .fonction {
-  display: flex;
-  justify-content: center;
   background-color: rgb(255, 255, 255);
 }
 .fonction__title {
   font-size: 24px;
   font-weight: 700;
-  padding: 2rem 0rem 1rem 0rem;
+  padding: 2rem 0rem 1rem 1rem;
+}
+.fonction__etapes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .fonction__etape {
   list-style: none;
@@ -143,6 +157,7 @@ main {
   background-color: rgb(246, 246, 246);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 1.5rem;
+  width: 20rem;
 }
 
 i.fonction__icon {
@@ -150,6 +165,80 @@ i.fonction__icon {
 }
 i.fonction__icon.fas.fa-store {
   color: rgb(147, 86, 220);
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  position: relative;
+  left: 32rem;
+  bottom: 14.5rem;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  color: white;
+  background-color: rgb(147, 86, 220);
+  padding: 0.2rem;
+  margin-bottom: 3.6rem;
+}
+
+.cards {
+  padding: 1rem;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card__img {
+  height: 12rem;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+.card__badge {
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+.card__bottom {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card__content {
+  flex: 1;
+}
+.card__title {
+  margin-bottom: 0.25rem;
+}
+.card__subtitle {
+  margin: 0;
+}
+.card__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.css.map */
