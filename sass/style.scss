@@ -63,7 +63,9 @@ header {
 
 .hero__btn {
   @include button;
+  
 }
+
 
 footer {
   background: $footer-color;

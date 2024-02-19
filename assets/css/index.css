@@ -137,11 +137,11 @@ h3 {
 
 .fonction {
   background-color: rgb(255, 255, 255);
+  padding: 2rem 0rem 1rem 1rem;
 }
 .fonction__title {
   font-size: 24px;
   font-weight: 700;
-  padding: 2rem 0rem 1rem 1rem;
 }
 .fonction__etapes {
   display: flex;
@@ -173,10 +173,9 @@ i.fonction__icon.fas.fa-store {
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  position: relative;
-  left: 32rem;
-  bottom: 14.5rem;
   border-radius: 50%;
+  position: absolute;
+  margin-left: -56px;
   height: 24px;
   width: 24px;
   color: white;

@@ -57,10 +57,10 @@ h3 {
 
 .fonction {
   background-color: $secondary-color;
+  padding: 2rem 0rem 1rem 1rem;
   &__title {
     font-size: 24px;
     font-weight: 700;
-    padding: 2rem 0rem 1rem 1rem;
   }
   &__etapes {
     display: flex;
@@ -93,10 +93,9 @@ i.fonction__icon {
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  position: relative;
-  left: 32rem;
-  bottom: 14.5rem;
   border-radius: 50%;
+  position: absolute;
+  margin-left: -56px;
   height: 24px;
   width: 24px;
   color: white;
@@ -166,4 +165,6 @@ i.fonction__icon {
     align-items: center;
     justify-content: center;
   }
+  
 }
+
