@@ -125,10 +125,10 @@ h3 {
 .hero__title {
   font-size: 24px;
   font-weight: 700;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem 1rem 3rem;
 }
 .hero__text {
-  padding: 0.5rem 0rem 2rem 0rem;
+  padding: 0rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +137,6 @@ h3 {
 
 .fonction {
   background-color: rgb(255, 255, 255);
-  padding: 2rem 0rem 1rem 1rem;
 }
 .fonction__title {
   font-size: 24px;
@@ -147,17 +146,18 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
 }
 .fonction__etape {
   list-style: none;
   font-weight: 500;
   border: 1px solid transparent;
   border-radius: 20px;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 2rem;
   background-color: rgb(246, 246, 246);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  margin-bottom: 1.5rem;
-  width: 20rem;
+  margin: 1.5rem 1rem 0rem 1rem;
+  width: 18rem;
 }
 
 i.fonction__icon {
@@ -175,7 +175,7 @@ i.fonction__icon.fas.fa-store {
   border: 1px solid black;
   border-radius: 50%;
   position: absolute;
-  margin-left: -56px;
+  margin-left: -47px;
   height: 24px;
   width: 24px;
   color: white;
