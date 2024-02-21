@@ -67,6 +67,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
+    @media (min-width: 1024px){flex-direction: row; justify-content: center;}
   }
   &__etape {
     list-style: none;
@@ -107,6 +108,7 @@ i.fonction__icon {
 
 .cards {
   padding: 1rem;
+  @media (min-width: 1024px){display:flex; flex-wrap: wrap; justify-content: center;gap:6rem;}
 }
 
 .card {
@@ -117,6 +119,7 @@ i.fonction__icon {
   text-decoration: none;
   color: inherit;
   display: block;
+  @media (min-width: 1024px){width:40%}
 
   &__img {
     height: 12rem;

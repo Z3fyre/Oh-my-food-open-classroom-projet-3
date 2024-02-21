@@ -57,8 +57,23 @@ footer {
 .footer {
   color: #ffffff;
 }
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    padding-top: 2rem;
+  }
+}
 .footer__list {
   padding-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+  }
 }
 .footer__link {
   text-decoration: none;
@@ -79,6 +94,11 @@ footer {
 .footer__logo {
   font-family: "Shrikhand", serif;
   font-size: 18px;
+}
+@media (min-width: 1024px) {
+  .footer__logo {
+    padding-top: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
