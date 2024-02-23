@@ -5,6 +5,16 @@ main {
   flex-direction: column;
   width: 100%;
 }
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 2rem 0rem 1rem 1rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
 
 .localisation {
   display: flex;
@@ -34,35 +44,46 @@ main {
   &__title {
     font-size: 24px;
     font-weight: 700;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    text-align: center;
   }
   &__text {
-    padding: 0.5rem 0rem 2rem 0rem;
+    padding: 0rem 1rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
+    text-align: center;
   }
 }
 
 .fonction {
-  display: flex;
-  justify-content: center;
   background-color: $secondary-color;
+
   &__title {
     font-size: 24px;
     font-weight: 700;
-    padding: 2rem 0rem 1rem 0rem;
+  }
+  &__etapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
   &__etape {
     list-style: none;
     font-weight: 500;
     border: 1px solid transparent;
     border-radius: 20px;
-    padding: 1.2rem 3rem;
+    padding: 1.2rem 2rem;
     background-color: $main-color;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 1rem 0rem 1rem;
+    width: 18rem;
   }
 }
 
@@ -70,5 +91,141 @@ i.fonction__icon {
   margin-right: 1rem;
   &.fas.fa-store {
     color: rgba(147, 86, 220, 1);
+  }
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -47px;
+  height: 24px;
+  width: 24px;
+  color: white;
+  background-color: rgba(147, 86, 220, 1);
+  padding: 0.2rem;
+  margin-bottom: 3.6rem;
+}
+
+.cards {
+  padding: 1rem;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+  }
+}
+
+.card {
+  background-color: $secondary-color;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
+
+  &__img {
+    height: 12rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+    @media (min-width: 1024px) {
+      height: 18rem;
+    }
+  }
+
+  &__badge {
+    background-color: rgba(153, 226, 208, 1);
+    color: rgba(0, 135, 102, 1);
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+  }
+
+  &__bottom {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    margin-bottom: 0.25rem;
+  }
+
+  &__subtitle {
+    margin: 0;
+  }
+
+  &__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        rgba(147, 86, 220, 1),
+        rgba(255, 121, 218, 1)
+      );
+    }
+  }
+
+  &__like {
+    transition-duration: 0.25s;
+    background-color: $secondary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+  }
+
+  &__btn:hover {
+    .menu__like {
+      &--noBg {
+        opacity: 0;
+      }
+    }
   }
 }
