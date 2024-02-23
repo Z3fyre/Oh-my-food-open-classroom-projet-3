@@ -35,7 +35,7 @@ header .header__logo img {
   color: #ffffff;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   cursor: pointer;
-  transition: all 300ms;
+  transition: all 300ms ease-in-out;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .hero__btn:hover {
@@ -51,7 +51,6 @@ footer {
   width: 100%;
   font-weight: 500;
   padding: 1rem;
-  margin-top: 2rem;
 }
 
 .footer {
@@ -61,8 +60,9 @@ footer {
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    gap: 0.5rem;
+    gap: 7rem;
     padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 }
 .footer__list {
@@ -71,8 +71,8 @@ footer {
 @media (min-width: 1024px) {
   .footer__list {
     display: flex;
-    justify-content: space-evenly;
-    width: 60%;
+    justify-content: flex-end;
+    gap: 3rem;
   }
 }
 .footer__link {
@@ -98,6 +98,7 @@ footer {
 @media (min-width: 1024px) {
   .footer__logo {
     padding-top: 0.7rem;
+    margin-right: 2rem;
   }
 }
 
@@ -145,7 +146,8 @@ h3 {
 .hero__title {
   font-size: 24px;
   font-weight: 700;
-  padding: 0.5rem 1rem 1rem 3rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  text-align: center;
 }
 .hero__text {
   padding: 0rem 1rem 2rem 1rem;
@@ -153,6 +155,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   font-size: 18px;
+  text-align: center;
 }
 
 .fonction {
@@ -244,6 +247,11 @@ i.fonction__icon.fas.fa-store {
   box-shadow: none;
   object-fit: cover;
 }
+@media (min-width: 1024px) {
+  .card__img {
+    height: 18rem;
+  }
+}
 .card__badge {
   background-color: rgb(153, 226, 208);
   color: rgb(0, 135, 102);
@@ -277,6 +285,39 @@ i.fonction__icon.fas.fa-store {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+.card__btn:hover::before {
+  opacity: 1;
+}
+.card__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
+}
+.card__like {
+  transition-duration: 0.25s;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+.card__btn:hover .menu__like--noBg {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

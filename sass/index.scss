@@ -44,7 +44,8 @@ h3 {
   &__title {
     font-size: 24px;
     font-weight: 700;
-    padding: 0.5rem 1rem 1rem 3rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    text-align: center;
   }
   &__text {
     padding: 0rem 1rem 2rem 1rem;
@@ -52,12 +53,13 @@ h3 {
     flex-direction: column;
     align-items: center;
     font-size: 18px;
+    text-align: center;
   }
 }
 
 .fonction {
   background-color: $secondary-color;
-  
+
   &__title {
     font-size: 24px;
     font-weight: 700;
@@ -67,7 +69,10 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
-    @media (min-width: 1024px){flex-direction: row; justify-content: center;}
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
   &__etape {
     list-style: none;
@@ -77,7 +82,7 @@ h3 {
     padding: 1.2rem 2rem;
     background-color: $main-color;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    margin:1.5rem 1rem 0rem 1rem;
+    margin: 1.5rem 1rem 0rem 1rem;
     width: 18rem;
   }
 }
@@ -108,7 +113,12 @@ i.fonction__icon {
 
 .cards {
   padding: 1rem;
-  @media (min-width: 1024px){display:flex; flex-wrap: wrap; justify-content: center;gap:6rem;}
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+  }
 }
 
 .card {
@@ -119,7 +129,9 @@ i.fonction__icon {
   text-decoration: none;
   color: inherit;
   display: block;
-  @media (min-width: 1024px){width:40%}
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
 
   &__img {
     height: 12rem;
@@ -128,6 +140,9 @@ i.fonction__icon {
     border-radius: 1rem 1rem 0 0;
     box-shadow: none;
     object-fit: cover;
+    @media (min-width: 1024px) {
+      height: 18rem;
+    }
   }
 
   &__badge {
@@ -168,7 +183,49 @@ i.fonction__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-}
+    cursor: pointer;
+    position: relative;
+    background-color: black;
 
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        rgba(147, 86, 220, 1),
+        rgba(255, 121, 218, 1)
+      );
+    }
+  }
+
+  &__like {
+    transition-duration: 0.25s;
+    background-color: $secondary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+  }
+
+  &__btn:hover {
+    .menu__like {
+      &--noBg {
+        opacity: 0;
+      }
+    }
+  }
+}
