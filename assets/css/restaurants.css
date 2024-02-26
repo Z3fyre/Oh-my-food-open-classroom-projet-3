@@ -72,7 +72,7 @@ footer {
   .footer__list {
     display: flex;
     justify-content: flex-end;
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 .footer__link {
@@ -162,6 +162,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 23px;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .menu__banner {
+    justify-content: center;
+  }
 }
 .menu__title {
   font-family: "Shrikhand", "cursive";
@@ -310,39 +317,39 @@ main {
 }
 
 .delay-1 {
-  animation-delay: 0.125s;
-}
-
-.delay-2 {
-  animation-delay: 0.25s;
-}
-
-.delay-3 {
-  animation-delay: 0.375s;
-}
-
-.delay-4 {
   animation-delay: 0.5s;
 }
 
-.delay-5 {
-  animation-delay: 0.625s;
-}
-
-.delay-6 {
-  animation-delay: 0.75s;
-}
-
-.delay-7 {
-  animation-delay: 0.875s;
-}
-
-.delay-8 {
+.delay-2 {
   animation-delay: 1s;
 }
 
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+.delay-4 {
+  animation-delay: 2s;
+}
+
+.delay-5 {
+  animation-delay: 2.5s;
+}
+
+.delay-6 {
+  animation-delay: 3s;
+}
+
+.delay-7 {
+  animation-delay: 3.5s;
+}
+
+.delay-8 {
+  animation-delay: 4s;
+}
+
 .delay-9 {
-  animation-delay: 1.125s;
+  animation-delay: 4.5s;
 }
 
 .hero {

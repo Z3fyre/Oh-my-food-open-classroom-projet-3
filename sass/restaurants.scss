@@ -1,9 +1,8 @@
 @import "style";
 
-
 @keyframes itemAppear {
   0% {
-    transform: scale(0)
+    transform: scale(0);
   }
   100% {
     transform: scale(1);
@@ -58,6 +57,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 23px;
+    gap: 1rem;
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -157,11 +161,10 @@ main {
   overflow: hidden;
   cursor: pointer;
   animation: itemAppear 3s;
-  animation-timing-function: cubic-bezier(.7,1.43,.68,.42);
+  animation-timing-function: cubic-bezier(0.7, 1.43, 0.68, 0.42);
   animation-fill-mode: forwards;
   transform: scale(0);
   max-width: 100%;
-  
 
   &__header {
     white-space: nowrap;
@@ -228,7 +231,7 @@ main {
 }
 @for $i from 0 to 10 {
   .delay-#{$i} {
-    animation-delay:  #{$i/8}s;
+    animation-delay: #{$i * 0.5}s;
   }
 }
 
