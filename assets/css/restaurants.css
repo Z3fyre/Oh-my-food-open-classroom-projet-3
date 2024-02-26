@@ -102,6 +102,14 @@ footer {
   }
 }
 
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .restaurantContainer {
   display: flex;
   align-items: center;
@@ -236,6 +244,10 @@ main {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: itemAppear 3s;
+  animation-timing-function: cubic-bezier(0.7, 1.43, 0.68, 0.42);
+  animation-fill-mode: forwards;
+  transform: scale(0);
   max-width: 100%;
 }
 .menuItem__header {
@@ -291,6 +303,46 @@ main {
 }
 .menuItem__icon {
   color: rgb(153, 226, 208);
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.125s;
+}
+
+.delay-2 {
+  animation-delay: 0.25s;
+}
+
+.delay-3 {
+  animation-delay: 0.375s;
+}
+
+.delay-4 {
+  animation-delay: 0.5s;
+}
+
+.delay-5 {
+  animation-delay: 0.625s;
+}
+
+.delay-6 {
+  animation-delay: 0.75s;
+}
+
+.delay-7 {
+  animation-delay: 0.875s;
+}
+
+.delay-8 {
+  animation-delay: 1s;
+}
+
+.delay-9 {
+  animation-delay: 1.125s;
 }
 
 .hero {
