@@ -26,12 +26,19 @@
 
     &Container {
       display: flex;
-      width: 50rem;
+      width: 20rem;
       justify-content: space-between;
+      @media (min-width: 768px) {
+        width: 35rem;
+      }
+
+      @media (min-width: 1024px) {
+        width: 50rem;
+      }
     }
 
     &--1 {
-      background-color:rgba(153, 226, 208, 1);
+      background-color: rgba(153, 226, 208, 1);
     }
 
     &--2 {
@@ -53,7 +60,7 @@
       animation-delay: 1s;
     }
     &--6 {
-      background:$btn-color;
+      background: $btn-color;
       animation-delay: 1.25s;
     }
   }

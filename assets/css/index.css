@@ -127,8 +127,18 @@ footer {
 }
 .loader__itemContainer {
   display: flex;
-  width: 50rem;
+  width: 20rem;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .loader__itemContainer {
+    width: 35rem;
+  }
+}
+@media (min-width: 1024px) {
+  .loader__itemContainer {
+    width: 50rem;
+  }
 }
 .loader__item--1 {
   background-color: rgb(153, 226, 208);
