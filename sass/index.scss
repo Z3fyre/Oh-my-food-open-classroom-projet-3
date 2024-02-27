@@ -188,7 +188,8 @@ h3 {
 
 i.fonction__icon {
   margin-right: 1rem;
-  &.fas.fa-store {
+  color: rgba(126, 126, 126, 1);
+  &.fa-solid.fa-store {
     color: rgba(147, 86, 220, 1);
   }
 }

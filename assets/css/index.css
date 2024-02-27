@@ -281,8 +281,9 @@ h3 {
 
 i.fonction__icon {
   margin-right: 1rem;
+  color: rgb(126, 126, 126);
 }
-i.fonction__icon.fas.fa-store {
+i.fonction__icon.fa-solid.fa-store {
   color: rgb(147, 86, 220);
 }
 
