@@ -108,58 +108,58 @@ footer {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  animation: loader 0.01s;
-  animation-delay: 7s;
+  z-index: 100;
+  background-color: rgba(137, 200, 250, 0.3);
+  animation: loader 5s;
+  animation-delay: 5s;
   animation-fill-mode: both;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
 }
-.loader__item {
+.loader__bar {
   height: 15rem;
   width: 5rem;
   border-radius: 1rem;
-  animation-name: jump;
+  animation-name: growth;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-.loader__itemContainer {
+.loader__barContainer {
   display: flex;
   width: 20rem;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
-  .loader__itemContainer {
+  .loader__barContainer {
     width: 35rem;
   }
 }
 @media (min-width: 1024px) {
-  .loader__itemContainer {
+  .loader__barContainer {
     width: 50rem;
   }
 }
-.loader__item--1 {
+.loader__bar__1 {
   background-color: rgb(153, 226, 208);
 }
-.loader__item--2 {
+.loader__bar__2 {
   background-color: rgb(0, 135, 102);
   animation-delay: 0.25s;
 }
-.loader__item--3 {
+.loader__bar__3 {
   background-color: rgb(137, 200, 250);
   animation-delay: 0.5s;
 }
-.loader__item--4 {
+.loader__bar__4 {
   background-color: rgb(0, 58, 104);
   animation-delay: 0.75s;
 }
-.loader__item--5 {
+.loader__bar__5 {
   background-color: rgb(147, 86, 220);
   animation-delay: 1s;
 }
-.loader__item--6 {
+.loader__bar__6 {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   animation-delay: 1.25s;
 }
@@ -170,7 +170,7 @@ footer {
     z-index: -100;
   }
 }
-@keyframes jump {
+@keyframes growth {
   0% {
     transform: translateY(0);
     scale: 0;
@@ -178,6 +178,10 @@ footer {
   25% {
     transform: translateY(0.5rem);
     scale: 0.75;
+  }
+  50% {
+    transform: translateY(2rem);
+    scale: 1.25;
   }
   75% {
     transform: translateY(-0.5rem);
@@ -338,7 +342,7 @@ i.fonction__icon.fas.fa-store {
     height: 18rem;
   }
 }
-.card__badge {
+.card__pin {
   background-color: rgb(153, 226, 208);
   color: rgb(0, 135, 102);
   padding: 0.5rem;
@@ -402,7 +406,7 @@ i.fonction__icon.fas.fa-store {
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.card__btn:hover .menu__like--noBg {
+.card__btn:hover .menu__like--inactive {
   opacity: 0;
 }
 

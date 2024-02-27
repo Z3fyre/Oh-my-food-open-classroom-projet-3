@@ -117,7 +117,7 @@ main {
 
   &__btn:hover {
     .menu__like {
-      &--noBg {
+      &--inactive {
         opacity: 0;
       }
     }

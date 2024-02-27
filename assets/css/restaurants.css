@@ -213,7 +213,7 @@ main {
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.menu__btn:hover .menu__like--noBg {
+.menu__btn:hover .menu__like--inactive {
   opacity: 0;
 }
 
