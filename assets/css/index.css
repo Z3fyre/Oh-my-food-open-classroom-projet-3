@@ -255,6 +255,12 @@ h3 {
   font-size: 24px;
   font-weight: 700;
 }
+@media (min-width: 1024px) {
+  .fonction__title {
+    position: relative;
+    left: 60px;
+  }
+}
 .fonction__etapes {
   display: flex;
   flex-direction: column;
@@ -302,6 +308,13 @@ i.fonction__icon.fa-solid.fa-store {
   background-color: rgb(147, 86, 220);
   padding: 0.2rem;
   margin-bottom: 3.6rem;
+}
+
+@media (min-width: 1024px) {
+  .restaurants__title {
+    position: relative;
+    left: 60px;
+  }
 }
 
 .cards {
