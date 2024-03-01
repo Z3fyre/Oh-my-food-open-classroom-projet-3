@@ -11,6 +11,9 @@ $btn-transition-color: linear-gradient(
     #ff79da 110.74%
   ),
   linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+$fonction-icon-color: rgba(147, 86, 220, 1);
+$pin-light-color: rgba(153, 226, 208, 1);
+$pin-dark-color: rgba(0, 135, 102, 1);
 
 /* Main commun */
 body {
@@ -45,7 +48,8 @@ header {
   padding: 1rem 1.5rem;
   font-weight: 500;
   border-radius: 100px;
-  color: #ffffff;
+  text-decoration: none;
+  color: $secondary-color;
   background: $btn-color;
   cursor: pointer;
   transition: all 300ms ease-in-out;
@@ -65,6 +69,7 @@ header {
   @include button;
 }
 
+/* footer commun */
 footer {
   background: $footer-color;
   width: 100%;
@@ -73,7 +78,7 @@ footer {
 }
 
 .footer {
-  color: #ffffff;
+  color: $secondary-color;
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
@@ -92,7 +97,7 @@ footer {
   }
   &__link {
     text-decoration: none;
-    color: #ffffff;
+    color: $secondary-color;
   }
 }
 
@@ -109,6 +114,8 @@ footer {
 .footer__logo {
   font-family: "Shrikhand", serif;
   font-size: 18px;
+  color: $secondary-color;
+  text-decoration: none;
   @media (min-width: 1024px) {
     padding-top: 0.7rem;
     margin-right: 2rem;

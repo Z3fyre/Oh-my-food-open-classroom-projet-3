@@ -13,20 +13,6 @@ h4 {
   font-weight: 700;
 }
 
-.header__arrow {
-  position: absolute;
-  left: 1rem;
-  top: 1.7rem;
-  color: rgba(53, 53, 53, 1);
-  font-size: 24px;
-}
-
-.heroImg {
-  max-width: 100%;
-  max-height: 32rem;
-  width: 100%;
-  object-fit: cover;
-}
 main {
   display: flex;
   flex-direction: column;
@@ -36,10 +22,29 @@ main {
   }
 }
 
+/* SCSS du header des restaurants*/
+
+.header__arrow {
+  position: absolute;
+  left: 1rem;
+  top: 1.7rem;
+  color: rgba(53, 53, 53, 1);
+  font-size: 24px;
+}
+
+.headerImg {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+/* Fin SCSS du header des restaurants*/
+
+/* SCSS du menu des restaurants*/
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: $main-color;
   z-index: 1;
   position: relative;
 
@@ -84,16 +89,13 @@ main {
       left: 0;
       height: 100%;
       width: 100%;
-      background: linear-gradient(
-        rgba(147, 86, 220, 1),
-        rgba(255, 121, 218, 1)
-      );
+      background: $btn-color;
     }
   }
 
   &__like {
     transition-duration: 0.25s;
-    background-color: #f6f6f6;
+    background-color: $main-color;
     mix-blend-mode: lighten;
     position: absolute;
     top: 0;
@@ -132,7 +134,7 @@ main {
       content: "";
       width: 3rem;
       height: 0.25rem;
-      background-color: rgba(153, 226, 208, 1);
+      background-color: $pin-light-color;
       position: absolute;
       left: 0;
       bottom: 0;
@@ -184,8 +186,10 @@ main {
     padding-left: 0.5rem;
   }
 
+  /* Animation de l'apparitions des "checks" du menu*/
+
   &__confirmation {
-    background-color: rgba(153, 226, 208, 1);
+    background-color: $pin-light-color;
     margin: -1rem -5rem -1rem 1rem;
     width: 4rem;
     display: flex;
@@ -206,8 +210,8 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: 0.5s;
+    transform: rotate(360deg);
+    transition-duration: 700ms;
   }
 
   &:hover &__check {
@@ -215,9 +219,11 @@ main {
   }
 
   &__icon {
-    color: rgba(153, 226, 208, 1);
+    color: $pin-light-color;
   }
 }
+
+/* Animation de l'apparitions des plats du menu*/
 @keyframes itemAppear {
   0% {
     transform: scale(0);
@@ -232,6 +238,10 @@ main {
   }
 }
 
+/* Fin du SCSS du menu des restaurants*/
+
+/* SCSS du bouton"hero" commander des restaurants*/
+
 .hero {
   display: flex;
   text-decoration: none;
@@ -241,3 +251,5 @@ main {
     padding: 1rem 3rem;
   }
 }
+
+/*Fin du SCSS du bouton "hero" commander des restaurants*/
