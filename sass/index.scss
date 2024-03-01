@@ -1,5 +1,7 @@
 @import "style";
 
+/* Animation du loader*/
+
 .loader {
   position: fixed;
   height: 100%;
@@ -38,11 +40,11 @@
     }
 
     &__1 {
-      background-color: rgba(153, 226, 208, 1);
+      background-color: $pin-light-color;
     }
 
     &__2 {
-      background-color: rgba(0, 135, 102, 1);
+      background-color: $pin-dark-color;
       animation-delay: 0.25s;
     }
 
@@ -56,7 +58,7 @@
       animation-delay: 0.75s;
     }
     &__5 {
-      background-color: rgba(147, 86, 220, 1);
+      background-color: $fonction-icon-color;
       animation-delay: 1s;
     }
     &__6 {
@@ -97,6 +99,8 @@
   }
 }
 
+/* parametres generaux de la page*/
+
 main {
   display: flex;
   flex-direction: column;
@@ -106,12 +110,20 @@ h2 {
   font-size: 24px;
   font-weight: 700;
   padding: 2rem 0rem 1rem 1rem;
+  @media (min-width: 1024px) {
+    padding: 2rem 0rem 1rem 4rem;
+  }
+  @media (min-width: 1700px) {
+    padding: 2rem 0rem 1rem 9rem;
+  }
 }
 
 h3 {
   font-size: 18px;
   font-weight: 700;
 }
+
+/* SCSS de la partie "hero" de l'index*/
 
 .localisation {
   display: flex;
@@ -154,16 +166,14 @@ h3 {
   }
 }
 
+/* SCSS du fonctionnement du site*/
+
 .fonction {
   background-color: $secondary-color;
 
   &__title {
     font-size: 24px;
     font-weight: 700;
-    @media (min-width: 1024px) {
-      position: relative;
-      left: 60px;
-    }
   }
   &__etapes {
     display: flex;
@@ -173,6 +183,9 @@ h3 {
     @media (min-width: 1024px) {
       flex-direction: row;
       justify-content: center;
+    }
+    @media (min-width: 1440px) {
+      gap: 2rem;
     }
   }
   &__etape {
@@ -185,6 +198,13 @@ h3 {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     margin: 1.5rem 1rem 0rem 1rem;
     width: 18rem;
+    @media (min-width: 1024px) {
+      width: 27%;
+      max-width: 400px;
+      font-weight: 600;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
   }
 }
 
@@ -192,7 +212,7 @@ i.fonction__icon {
   margin-right: 1rem;
   color: rgba(126, 126, 126, 1);
   &.fa-solid.fa-store {
-    color: rgba(147, 86, 220, 1);
+    color: $fonction-icon-color;
   }
 }
 
@@ -208,17 +228,12 @@ i.fonction__icon {
   height: 24px;
   width: 24px;
   color: white;
-  background-color: rgba(147, 86, 220, 1);
+  background-color: $fonction-icon-color;
   padding: 0.2rem;
   margin-bottom: 3.6rem;
 }
 
-.restaurants__title {
-  @media (min-width: 1024px) {
-    position: relative;
-    left: 60px;
-  }
-}
+/* SCSS des cartes de presentations des restaurants */
 
 .cards {
   padding: 1rem;
@@ -232,7 +247,7 @@ i.fonction__icon {
 
 .card {
   background-color: $secondary-color;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
@@ -255,8 +270,8 @@ i.fonction__icon {
   }
 
   &__pin {
-    background-color: rgba(153, 226, 208, 1);
-    color: rgba(0, 135, 102, 1);
+    background-color: $pin-light-color;
+    color: $pin-dark-color;
     padding: 0.5rem;
     border-radius: 0.125rem;
     position: absolute;
@@ -276,11 +291,7 @@ i.fonction__icon {
   }
 
   &__title {
-    margin-bottom: 0.25rem;
-  }
-
-  &__subtitle {
-    margin: 0;
+    margin-bottom: 0.3rem;
   }
 
   &__btn {
@@ -288,7 +299,6 @@ i.fonction__icon {
     width: 2rem;
     background-color: transparent;
     border: transparent 0px solid;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,10 +319,7 @@ i.fonction__icon {
       left: 0;
       height: 100%;
       width: 100%;
-      background: linear-gradient(
-        rgba(147, 86, 220, 1),
-        rgba(255, 121, 218, 1)
-      );
+      background: $btn-color;
     }
   }
 

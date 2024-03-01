@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
 
+  <!-- Loader de la page principale Oh My Food -->
+
   <div class="loader">
     <div class="loader__barContainer">
       <div class="loader__bar loader__bar__1"></div>
@@ -47,6 +49,8 @@
   </div>
 
   <body>
+    <!-- Header de la page principale Oh My Food -->
+
     <header>
       <h1 class="header__logo">
         <img src =assets/images/logo/ohmyfood.png alt="logo oh my food"> oh my
@@ -54,20 +58,25 @@
       </h1>
     </header>
 
+    <!-- Main de la page principale Oh My Food -->
+
     <main>
+      <!-- localisation restaurant -->
       <section class="localisation">
         <i class="fas fa-map-marker-alt localisation__icon"></i>
         <span class="localisation__text">Paris, Belleville</span>
       </section>
 
+      <!-- bouton "hero" et exploration des restaurants d'Oh My Food -->
       <section class="hero">
         <h2 class="hero__title">Réservez le menu qui vous convient</h2>
         <p class="hero__text">
           Découvrez des restaurants d'exception, séléctionnés par nos soins
         </p>
-        <a class="hero__btn"> Explorer nos restaurants </a>
+        <a class="hero__btn" href="#restaurants"> Explorer nos restaurants </a>
       </section>
 
+      <!-- Fonctionnement de la page Oh My Food -->
       <section class="fonction">
         <div class="container">
           <h2 class="fonction__title">Fonctionnement</h2>
@@ -90,6 +99,9 @@
           </ol>
         </div>
       </section>
+
+      <!-- cartes de presentations des restaurants de la page principale Oh My Food -->
+
       <section class="restaurants" id="restaurants">
         <div class="container">
           <h2 class="restaurants__title">Restaurants</h2>
@@ -98,7 +110,7 @@
             <a class="card" href="restaurants/La-palette-du-gout.html">
               <img
                 src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt=""
+                alt="photo d'un plat de la palette du gout"
                 class="card__img"
               />
               <span class="card__pin">Nouveau</span>
@@ -121,7 +133,7 @@
             <a class="card" href="restaurants/la-note-enchantee.html">
               <img
                 src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="photo assiette la note enchantée"
+                alt="photo d'un plat de la note enchantée"
                 class="card__img"
               />
               <span class="card__pin">Nouveau</span>
@@ -144,7 +156,7 @@
             <a class="card" href="restaurants/A-la-Francaise.html">
               <img
                 src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt=""
+                alt="photo d'un plat d'a la francaise"
                 class="card__img"
               />
               <div class="card__bottom">
@@ -166,7 +178,7 @@
             <a class="card" href="restaurants/le-delice-des-sens.html">
               <img
                 src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt=""
+                alt="photo d'un plat du delice des sens"
                 class="card__img"
               />
               <div class="card__bottom">
@@ -189,9 +201,11 @@
       </section>
     </main>
 
+    <!-- Footer de la page principale Oh My Food -->
+
     <footer>
       <div class="footer">
-        <span class="footer__logo">ohmyfood</span>
+        <a class="footer__logo" href="#">ohmyfood</a>
         <ul class="footer__list">
           <li class="footer__liens">
             <a class="footer__link" href="#"
